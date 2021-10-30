@@ -107,13 +107,19 @@ body{
     left: 0;
     top: 0;
     width: 100%;
-    height: 100%;
+    height: 1000px;
     background-color: #017143;
     z-index: -1;
 
     clip-path: circle(650px at right 800px);
 
     transition: background-color 0.9s ease;
+}
+
+@media only screen and (max-height: 560px) {
+    .background{
+        clip-path: circle(650px at right 800px);
+    }
 }
 
 #buttonLinks{
